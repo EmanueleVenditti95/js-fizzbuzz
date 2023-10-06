@@ -22,13 +22,17 @@ for (let i = 0; i < 100; i++) {
         console.log(n)
     }
 
-    let container = document.createElement('div')
-    container.classList.add('container')
-    console.log(container)
+    containerDOMElement = document.getElementById('container')
+    containerDOMElement.append('box')
+
+    // let container = document.createElement('div')
+    // container.classList.add('container')
+    // console.log(container)
 
 	let box = document.createElement('div')
+    console.log('div')
 	box.classList.add('box')
-	container.append(box)
     box.innerHTML = n
+    console.log('box')
 
 }
